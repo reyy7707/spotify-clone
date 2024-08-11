@@ -1,0 +1,72 @@
+.playlist-detail {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #e1e1e1;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.playlist-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.playlist-cover {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.playlist-description {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.track-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.track-item {
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.track-info {
+  flex: 1;
+}
+
+.track-player {
+  margin-bottom: 10px;
+}
+
+.track-name {
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+}
+
+.track-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0;
+}

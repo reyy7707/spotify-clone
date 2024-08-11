@@ -1,0 +1,85 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.profile-email {
+  color: #6a6a6a;
+}
+
+.profile-followers,
+.profile-product {
+  font-size: 1rem;
+  color: #6a6a6a;
+  margin: 5px 0;
+}
+
+.profile-product {
+  text-transform: capitalize;
+}
+
+.profile-playlists {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.playlist-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.playlist-cover {
+  width: 80px;
+  height: 70px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.playlist-name {
+  font-size: 1rem;
+}
+
+.playlist-link {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.playlist-cover2 {
+  width: 110px;
+  height: 90px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 10px;
+}

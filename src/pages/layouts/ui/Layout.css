@@ -1,0 +1,52 @@
+.layout-main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: black;
+    padding: 20px;
+    color: #e1e1e1;
+}
+
+.sidebar h2 {
+    margin-bottom: 24px;
+    background-color: black;
+    font-size: 28px
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    background-color: black;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+    background-color: black;
+}
+
+.sidebar a {
+    color: #e1e1e1;
+    text-decoration: none;
+    background-color: black;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 100%;
+    display: flex;
+}

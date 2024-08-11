@@ -1,0 +1,68 @@
+.recommendations {
+  flex: 2;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  color: #e1e1e1;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  display: flex;
+}
+
+.track-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  height: 212px;
+}
+
+.track-info {
+  flex: 1;
+}
+
+.track-player {
+  margin-bottom: 10px;
+}
+
+.track-name {
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+}
+
+.track-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.cover-image2 {
+  width: 100px;
+  height: 90px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-margin {
+  display: flex;
+  margin-top: 70px;
+  width: 100%;
+}
