@@ -4,7 +4,7 @@ import './SpotifyLogin.css';
 
 const SpotifyLogin: React.FC = () => {
   const clientId = '4d743b4bfb6143f59fd4fba648f12cff';
-  const redirectUri = 'https://spotify-clone-o44k5mpmn-reyys-projects.vercel.app/callback';
+  const redirectUri = 'https://spotify-02-clone.vercel.app/callback';
 
   const loginUrl = `https://accounts.spotify.com/authorize?response_type=token&client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${encodeURIComponent('user-read-private user-read-email playlist-read-private')}`;
 
