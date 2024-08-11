@@ -5,27 +5,22 @@ const Callback: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const hash = window.location.hash.substring(1).split('&').reduce((initial: any, item) => {
-      const parts = item.split('=');
-      initial[parts[0]] = decodeURIComponent(parts[1]);
-      return initial;
-    }, {});
+    const hash = window.location.hash.substring(1);
     const params = new URLSearchParams(hash);
+
     const accessToken = params.get('access_token');
+    const tokenType = params.get('token_type');
+    const expiresIn = params.get('expires_in');
 
     if (accessToken) {
       localStorage.setItem('spotifyAccessToken', accessToken);
-      window.location.hash = '';
+      localStorage.setItem('spotifyTokenType', tokenType || 'Bearer');
+      localStorage.setItem('spotifyExpiresIn', expiresIn || '3600');
+
+      window.history.replaceState({}, document.title, window.location.pathname);
+      navigate('/personal-area');
     } else {
       console.error('No access token found in URL');
-    }
-
-    console.log('Hash:', hash);
-
-    if (hash.access_token) {
-      localStorage.setItem('spotifyAccessToken', hash.access_token);
-      navigate('/profile');
-    } else {
       navigate('/');
     }
   }, [navigate]);
