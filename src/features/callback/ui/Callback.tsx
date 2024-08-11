@@ -18,7 +18,7 @@ const Callback: React.FC = () => {
       localStorage.setItem('spotifyExpiresIn', expiresIn || '3600');
 
       window.history.replaceState({}, document.title, window.location.pathname);
-      navigate('/personal-area');
+      navigate('/profile');
     } else {
       console.error('No access token found in URL');
       navigate('/');

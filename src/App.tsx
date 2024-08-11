@@ -19,7 +19,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Layout />} />
             <Route path='/register' element={<SpotifyLogin />} />
             <Route path="/callback" element={<Callback />} />
-            <Route path="/personal-area" element={<UserProfile />} />
+            <Route path="/profile" element={<UserProfile />} />
             <Route path="/playlist" element={<Playlists />} />
             <Route path="/player" element={<TrackPlayer trackUrl={''} />} />
             <Route path="/recomendation" element={<Recommendations />} />
