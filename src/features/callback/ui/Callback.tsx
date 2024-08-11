@@ -12,6 +12,10 @@ const Callback: React.FC = () => {
     const tokenType = params.get('token_type');
     const expiresIn = params.get('expires_in');
 
+    console.log('Access Token:', accessToken);
+    console.log('Token Type:', tokenType);
+    console.log('Expires In:', expiresIn);
+
     if (accessToken) {
       localStorage.setItem('spotifyAccessToken', accessToken);
       localStorage.setItem('spotifyTokenType', tokenType || 'Bearer');
