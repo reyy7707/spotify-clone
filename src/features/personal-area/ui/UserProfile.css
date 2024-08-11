@@ -1,3 +1,10 @@
+.user {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
 .user-profile {
   display: flex;
   flex-direction: column;
