@@ -10,9 +10,9 @@ const Layout: React.FC = () => {
 
   useEffect(() => {
     if (localStorage.getItem('spotifyAccessToken')) {
-      navigate('/register')
-    } else {
       console.log('verify');
+    } else {
+      navigate('/register')
     }
   }, [])
 
